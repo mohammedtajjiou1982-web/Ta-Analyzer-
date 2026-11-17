@@ -1,0 +1,19 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F4F8FA">
+<LinearLayout android:orientation="vertical" android:padding="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+ <TextView android:text="Truth Analyzer | محلل الحوار الذكي" android:textStyle="bold" android:textSize="23sp" android:textColor="#123B4A" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+ <TextView android:text="سجّل بموافقة المشاركين، ثم أرسل الملف إلى خادم التحليل الآمن لتفريغ العربية وتمييز المتحدثين وتحليل اختلاف الروايات." android:textSize="14sp" android:textColor="#526773" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+ <TextView android:text="رابط خادم التحليل (HTTPS)" android:textStyle="bold" android:layout_marginTop="18dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+ <EditText android:id="@+id/endpoint" android:hint="https://your-secure-server.example" android:inputType="textUri" android:singleLine="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#FFFFFF" android:padding="12dp"/>
+ <TextView android:text="رمز الوصول للخادم" android:textStyle="bold" android:layout_marginTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+ <EditText android:id="@+id/accessToken" android:hint="رمز الوصول الذي يحدده مسؤول الخادم" android:inputType="textPassword" android:singleLine="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#FFFFFF" android:padding="12dp"/>
+ <TextView android:text="التسجيل الصوتي" android:textStyle="bold" android:textSize="18sp" android:textColor="#123B4A" android:layout_marginTop="18dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+ <TextView android:id="@+id/status" android:text="جاهز للتسجيل" android:textColor="#176B87" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+ <Button android:id="@+id/recordBtn" android:text="بدء التسجيل" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+ <Button android:id="@+id/stopBtn" android:text="إيقاف التسجيل" android:enabled="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+ <Button android:id="@+id/analyzeBtn" android:text="تفريغ وتحليل الحوار عبر الإنترنت" android:layout_marginTop="14dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+ <TextView android:text="نتيجة التفريغ والتحليل" android:textStyle="bold" android:textSize="18sp" android:textColor="#123B4A" android:layout_marginTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+ <TextView android:id="@+id/result" android:text="سيظهر هنا نص الحوار، المتحدثون، التوقيتات، والاختلافات التي تحتاج إلى تحقق." android:textSize="14sp" android:textColor="#183B49" android:background="#FFFFFF" android:padding="14dp" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+ <Button android:id="@+id/pdfBtn" android:text="حفظ التقرير PDF" android:enabled="false" android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+ <TextView android:text="مهم: التحليل لا يثبت الكذب ولا يستنتج الصدق من نبرة الصوت. راجع هوية المتحدث والنص والتوقيتات يدوياً. التسجيلات ترسل إلى خادم التحليل بعد الضغط على زر التحليل؛ لا تسجل دون موافقة المشاركين." android:textSize="12sp" android:textColor="#7A4B16" android:layout_marginTop="18dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout></ScrollView>
